@@ -25,21 +25,11 @@ public class HandleScripts : MonoBehaviour
         
         if (Handle.transform.rotation.z != xValue)
         {
-            if (FirstTrigger == true)
+            if (FirstTrigger == true && TextScripts.guideStage >= 2)
             {
-                
-                text.color = new Color(0, 255, 0, 1);
-                
-                text.CrossFadeAlpha(0, 4, false);
-                
-                text.text = "Turn the handle to change the height of the drillhead";
-                
-                text.color = new Color(255, 255, 255, 1);
-                
-                text.CrossFadeAlpha(1, 0, false);
-                
+                StartCoroutine(Textchanger(4));
+                TextScripts.guideStage = 5;
                 FirstTrigger = false;
-
             }
             difference = Handle.transform.rotation.z - xValue;
 
@@ -51,13 +41,13 @@ public class HandleScripts : MonoBehaviour
             xValue = Handle.transform.rotation.z;
             
         }
-        
-        
-        
 
-
-
-
+    }
+    private IEnumerator Textchanger(float waittime)
+    {
+        TextScripts.ChangeText(new Color(0, 255, 0, 1), 0, 4, "", text);
+        yield return new WaitForSeconds(waittime);
+        TextScripts.ChangeText(new Color(255, 255, 255, 1), 1, 0, "Turn the handle to change the height of the drillhead", text);
     }
    
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StopButtonTrigger : MonoBehaviour
 {
@@ -9,8 +10,11 @@ public class StopButtonTrigger : MonoBehaviour
     {
         if (other.gameObject.tag == "GameController")
         {
-            Debug.Log("Stopping");
             DrillScripts.Running = false;
+            if (DrillScripts.Percentage == 100)
+            {
+                SceneManager.LoadScene("Menu");
+            }
         }
 
     }
