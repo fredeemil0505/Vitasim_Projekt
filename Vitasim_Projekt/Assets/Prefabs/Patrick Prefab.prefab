@@ -1025,7 +1025,7 @@ GameObject:
   - component: {fileID: 3345870512239446668}
   - component: {fileID: 1468444827}
   m_Layer: 0
-  m_Name: XR Rig teleport
+  m_Name: XR Rig teleport test
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1207,17 +1207,17 @@ PrefabInstance:
     - target: {fileID: 832040729241791427, guid: 152704c604b8b1a4caa010df49079e56,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.95295
+      value: 4.357514
       objectReference: {fileID: 0}
     - target: {fileID: 832040729241791427, guid: 152704c604b8b1a4caa010df49079e56,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 1.6155018
+      value: 2.9326744
       objectReference: {fileID: 0}
     - target: {fileID: 832040729241791427, guid: 152704c604b8b1a4caa010df49079e56,
         type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: -2.9137006
+      value: -5.7281613
       objectReference: {fileID: 0}
     - target: {fileID: 1843167630688768167, guid: 152704c604b8b1a4caa010df49079e56,
         type: 3}
