@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8c9a175c424af9043a3d648bebd32d46, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -202,7 +202,7 @@ MonoBehaviour:
   m_AnchorControlOffAxisDeadzone: 0.3
   m_ControllerNode: 4
   m_SelectUsage: 3
-  m_ActivateUsage: 11
+  m_ActivateUsage: 6
   m_UIPressUsage: 2
   m_AxisToPressThreshold: 0.1
   m_RotateAnchorLeft: 16
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 0}
   m_InteractionLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 3863
   m_AttachTransform: {fileID: 0}
   m_StartingSelectedInteractable: {fileID: 0}
   m_OnHoverEntered:
@@ -277,7 +277,7 @@ MonoBehaviour:
   m_SphereCastRadius: 0.1
   m_RaycastMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 3863
   m_RaycastTriggerInteraction: 1
   m_KeepSelectedTargetValid: 1
   m_HoverToSelect: 0
@@ -432,7 +432,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   m_ValidColorGradient:
     serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
+    key0: {r: 0.028630257, g: 1, b: 0, a: 1}
     key1: {r: 1, g: 1, b: 1, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
@@ -654,7 +654,7 @@ MonoBehaviour:
   m_AnchorControlOffAxisDeadzone: 0.3
   m_ControllerNode: 5
   m_SelectUsage: 3
-  m_ActivateUsage: 11
+  m_ActivateUsage: 6
   m_UIPressUsage: 2
   m_AxisToPressThreshold: 0.1
   m_RotateAnchorLeft: 16
@@ -677,7 +677,7 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 0}
   m_InteractionLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 3863
   m_AttachTransform: {fileID: 0}
   m_StartingSelectedInteractable: {fileID: 0}
   m_OnHoverEntered:
@@ -729,7 +729,7 @@ MonoBehaviour:
   m_SphereCastRadius: 0.1
   m_RaycastMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 3863
   m_RaycastTriggerInteraction: 1
   m_KeepSelectedTargetValid: 1
   m_HoverToSelect: 0
@@ -884,7 +884,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   m_ValidColorGradient:
     serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
+    key0: {r: 0.028630257, g: 1, b: 0, a: 1}
     key1: {r: 1, g: 1, b: 1, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
@@ -1207,17 +1207,17 @@ PrefabInstance:
     - target: {fileID: 832040729241791427, guid: 152704c604b8b1a4caa010df49079e56,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 4.357514
+      value: 0.95295
       objectReference: {fileID: 0}
     - target: {fileID: 832040729241791427, guid: 152704c604b8b1a4caa010df49079e56,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 2.9326744
+      value: 1.6155018
       objectReference: {fileID: 0}
     - target: {fileID: 832040729241791427, guid: 152704c604b8b1a4caa010df49079e56,
         type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: -5.7281613
+      value: -2.9137006
       objectReference: {fileID: 0}
     - target: {fileID: 1843167630688768167, guid: 152704c604b8b1a4caa010df49079e56,
         type: 3}
