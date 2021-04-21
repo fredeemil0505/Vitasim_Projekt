@@ -843,6 +843,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcdba9caf664b1b47a57882aea8f9a8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 5
+  controller: {fileID: 0}
 --- !u!54 &573763192060454923
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -871,6 +873,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa7e21c36734a424bb0a8918ab12cdd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  smoothingAmount: 15
+  target: {fileID: 0}
 --- !u!65 &573763192728940803
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -964,7 +968,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c4874cd5feb313e44a9c89e5dbdd5dc0, type: 2}
+  - {fileID: 2100000, guid: 33362fc415db25c40946e580cbe78553, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

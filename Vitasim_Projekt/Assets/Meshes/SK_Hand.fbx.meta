@@ -6,7 +6,12 @@ ModelImporter:
   - first:
       74: 5712509923591452515
     second: r_hand_skeletal_lowres
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: unnamed1
+    second: {fileID: 2100000, guid: 0cf88ff71c7490d41a5085da6437590f, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
