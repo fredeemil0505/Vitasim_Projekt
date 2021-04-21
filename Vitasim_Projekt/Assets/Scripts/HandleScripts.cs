@@ -25,7 +25,7 @@ public class HandleScripts : MonoBehaviour
         
         if (Handle.transform.rotation.z != xValue)
         {
-            if (FirstTrigger == true && TextScripts.guideStage >= 2)
+            if (FirstTrigger == true && TextScripts.guideStage <= 2 && MenuScripts.IsTutorial == true)
             {
                 StartCoroutine(Textchanger(4));
                 TextScripts.guideStage = 5;
