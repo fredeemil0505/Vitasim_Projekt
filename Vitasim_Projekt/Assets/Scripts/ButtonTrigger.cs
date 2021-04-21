@@ -11,24 +11,25 @@ public class ButtonTrigger : MonoBehaviour
     //When a controller hits the button it will set running to true and start palying a sound.
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "GameController")
         {
-            if (FirstTrigger == true && TextScripts.guideStage == 1 && MenuScripts.IsTutorial == true)
+            if (FirstTrigger == true)
             {
-                StartCoroutine(TextChanger(4));
+                text.color = new Color(0, 255, 0, 1);
+            
+                text.CrossFadeAlpha(0, 4, false);
+            
+                text.text = "Arrange the drilspots under the drillhead and grab the handle";
+            
+                text.color = new Color(255, 255, 255, 1);
+            
+                text.CrossFadeAlpha(1, 0, false);
+                
                 FirstTrigger = false;
-                TextScripts.guideStage = 2;
             }
             
             DrillScripts.Running = true;
         }
         
-    }
-    private IEnumerator TextChanger(float waitTime)
-    {
-        TextScripts.ChangeText(new Color(0, 255, 0, 1), 0, 4, "", text);
-        yield return new WaitForSeconds(waitTime);
-        TextScripts.ChangeText(new Color(255, 255, 255, 1), 1, 0, "Grab the drillplate and arrange the drilspots under the drillhead", text);
-        TextScripts.currentMessage = "Grab the drillplate and arrange the drilspots under the drillhead";
     }
 }

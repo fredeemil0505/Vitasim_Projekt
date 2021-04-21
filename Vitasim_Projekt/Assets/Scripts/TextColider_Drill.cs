@@ -5,30 +5,25 @@ using UnityEngine.UI;
 
 public class TextColider_Drill : MonoBehaviour
 {
-    static bool FirstTrigger = true;
+    static bool FirstTrigger;
     [SerializeField]
     public Text text;
-    //Changes the message text the first time it triggers
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (FirstTrigger == true && other.gameObject.tag == "Player" && MenuScripts.IsTutorial == true)
+        if (FirstTrigger == true)
         {
-            StartCoroutine(Textboxcollider(4.1f));
-            FirstTrigger = false;
-
-            TextScripts.guideStage = 1;
-            
-        }
+ 
+            text.color = new Color(0, 255, 0, 1);
         
+            text.CrossFadeAlpha(0, 4, false);
+        
+            text.text = "Turn on the machine before drilling";
+        
+            text.color = new Color(255, 255, 255, 1);
+        
+            text.CrossFadeAlpha(1, 0, false);
+            FirstTrigger = false;
+        }
+       
     }
-    private IEnumerator Textboxcollider(float waittime)
-    {
-        TextScripts.ChangeText(new Color(0, 255, 0, 1), 0, 4f, "", text);
-        yield return new WaitForSeconds(waittime);
-        TextScripts.ChangeText(new Color(255, 255, 255, 1), 1, 0f, "Turn on the machine before drilling", text);
-        TextScripts.currentMessage = "Turn on the machine before drilling";
-
-
-    }
-    
 }
