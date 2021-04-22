@@ -1925,11 +1925,32 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 64792264, guid: edcac9ab62982344cab2b33a18d44fd1, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 1588061292}
     - target: {fileID: 993401540, guid: edcac9ab62982344cab2b33a18d44fd1, type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1588061292}
+    - target: {fileID: 1281507169, guid: edcac9ab62982344cab2b33a18d44fd1, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 1588061292}
     - target: {fileID: 1418476890, guid: edcac9ab62982344cab2b33a18d44fd1, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 1588061292}
+    - target: {fileID: 1702331587, guid: edcac9ab62982344cab2b33a18d44fd1, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 1588061292}
+    - target: {fileID: 1891713892, guid: edcac9ab62982344cab2b33a18d44fd1, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 1588061292}
+    - target: {fileID: 2679051440988380462, guid: edcac9ab62982344cab2b33a18d44fd1,
+        type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1588061292}
@@ -1993,6 +2014,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4591240080685630864, guid: edcac9ab62982344cab2b33a18d44fd1,
+        type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 1588061292}
     - target: {fileID: 5225374377472332480, guid: edcac9ab62982344cab2b33a18d44fd1,
         type: 3}
       propertyPath: m_InteractionManager
