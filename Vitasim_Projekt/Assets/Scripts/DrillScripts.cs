@@ -11,6 +11,7 @@ public class DrillScripts : MonoBehaviour
     static bool firstdrill = true;
     [SerializeField]
     public Text percentagebar;
+    public static float Percentage;
     public int numberOfHoles;
     public Text message;
 
@@ -30,7 +31,8 @@ public class DrillScripts : MonoBehaviour
             }
             //Sets the % amount to the UI overlay
             amount++;
-            percentagebar.text = (((100 / numberOfHoles)*amount).ToString())+"%";
+            Percentage = 100 / numberOfHoles * amount;
+            percentagebar.text = (Percentage.ToString())+"%";
         }
         else
         {
