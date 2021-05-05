@@ -1949,6 +1949,26 @@ PrefabInstance:
       propertyPath: onSwitchContinuous.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 6861165634191585287}
+    - target: {fileID: 169039680, guid: edcac9ab62982344cab2b33a18d44fd1, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 1588061292}
+    - target: {fileID: 353068654, guid: edcac9ab62982344cab2b33a18d44fd1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 353068654, guid: edcac9ab62982344cab2b33a18d44fd1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 353068654, guid: edcac9ab62982344cab2b33a18d44fd1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 372518686, guid: edcac9ab62982344cab2b33a18d44fd1, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 1588061292}
     - target: {fileID: 986642607, guid: edcac9ab62982344cab2b33a18d44fd1, type: 3}
       propertyPath: onSwitchTeleport.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -1965,6 +1985,18 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1588061292}
+    - target: {fileID: 1323587009, guid: edcac9ab62982344cab2b33a18d44fd1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1323587009, guid: edcac9ab62982344cab2b33a18d44fd1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1323587009, guid: edcac9ab62982344cab2b33a18d44fd1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1418476890, guid: edcac9ab62982344cab2b33a18d44fd1, type: 3}
       propertyPath: m_InteractionManager
       value: 
