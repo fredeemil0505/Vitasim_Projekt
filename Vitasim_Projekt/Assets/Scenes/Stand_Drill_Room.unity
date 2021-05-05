@@ -1918,6 +1918,18 @@ PrefabInstance:
       objectReference: {fileID: 1656443446}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acdcb9fd748918541abf572718658570, type: 3}
+--- !u!114 &6861165634191585287 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6549793458457406620, guid: acdcb9fd748918541abf572718658570,
+    type: 3}
+  m_PrefabInstance: {fileID: 6861165634191585286}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7636915408377522728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1929,6 +1941,22 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1588061292}
+    - target: {fileID: 122568410, guid: edcac9ab62982344cab2b33a18d44fd1, type: 3}
+      propertyPath: onSwitchTeleport.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 6861165634191585287}
+    - target: {fileID: 122568410, guid: edcac9ab62982344cab2b33a18d44fd1, type: 3}
+      propertyPath: onSwitchContinuous.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 6861165634191585287}
+    - target: {fileID: 986642607, guid: edcac9ab62982344cab2b33a18d44fd1, type: 3}
+      propertyPath: onSwitchTeleport.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 6861165634191585287}
+    - target: {fileID: 986642607, guid: edcac9ab62982344cab2b33a18d44fd1, type: 3}
+      propertyPath: onSwitchContinuous.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 6861165634191585287}
     - target: {fileID: 993401540, guid: edcac9ab62982344cab2b33a18d44fd1, type: 3}
       propertyPath: m_InteractionManager
       value: 

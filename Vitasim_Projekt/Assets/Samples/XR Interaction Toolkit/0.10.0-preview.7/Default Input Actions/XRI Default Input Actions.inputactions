@@ -354,11 +354,11 @@
                 },
                 {
                     "name": "",
-                    "id": "72abcfd1-017a-4e69-a4bb-77e09776066e",
-                    "path": "<OculusTouchController>{LeftHand}/primaryButton",
+                    "id": "e5cdd560-5dfd-4ab4-832c-7b34c623d23e",
+                    "path": "<XRController>{LeftHand}/primaryButton",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "",
                     "action": "Movement Switch",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -661,11 +661,11 @@
                 },
                 {
                     "name": "",
-                    "id": "c7380aba-2137-4fde-b182-1cfb0b094bda",
-                    "path": "<OculusTouchController>{RightHand}/primaryButton",
+                    "id": "7334c531-a70c-46c8-ba7a-01a00a029f9c",
+                    "path": "<XRController>{RightHand}/primaryButton",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "",
                     "action": "Movement Switch",
                     "isComposite": false,
                     "isPartOfComposite": false
