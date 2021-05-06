@@ -7,6 +7,7 @@ public class HandleGrab : XRGrabInteractable
 {
     public float Distance = 0.05f;
     public float Mass = 20.0f;
+    public float EditMass { get { return Mass; } set { Mass = value; } }
     public Transform handler;
     Rigidbody rb;
 
