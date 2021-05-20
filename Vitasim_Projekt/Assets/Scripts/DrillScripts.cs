@@ -14,6 +14,7 @@ public class DrillScripts : MonoBehaviour
     public static float Percentage;
     public int numberOfHoles;
     public Text message;
+    public static float startTime;
 
     
     private void OnTriggerEnter(Collider other)
@@ -28,6 +29,7 @@ public class DrillScripts : MonoBehaviour
                 message.color = new Color(0, 255, 0, 1);
                 message.CrossFadeAlpha(0, 3.0f, false);
                 firstdrill = false;
+                startTime = Time.fixedTime;
             }
             //Sets the % amount to the UI overlay
             amount++;

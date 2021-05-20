@@ -5,12 +5,13 @@ using UnityEngine.UI;
 
 public class TextColider_Drill : MonoBehaviour
 {
-    static bool FirstTrigger;
+    static bool FirstTrigger = true;
     [SerializeField]
     public Text text;
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (FirstTrigger == true)
+        Debug.Log(other.tag);
+        if (FirstTrigger == true && other.tag == "Untagged")
         {
  
             text.color = new Color(0, 255, 0, 1);
