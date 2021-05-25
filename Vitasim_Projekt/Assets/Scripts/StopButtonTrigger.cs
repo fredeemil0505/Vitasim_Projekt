@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class StopButtonTrigger : MonoBehaviour
 {
@@ -13,7 +12,8 @@ public class StopButtonTrigger : MonoBehaviour
             DrillScripts.Running = false;
             if (DrillScripts.Percentage == 100)
             {
-                SceneManager.LoadScene("Menu");
+                MenuScripts.isWinner = true;
+                MenuScripts.menuScripts.PlayScene("Menu");
             }
         }
 

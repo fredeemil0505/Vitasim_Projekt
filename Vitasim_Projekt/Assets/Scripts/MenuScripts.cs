@@ -6,12 +6,27 @@ using UnityEngine.Audio;
 
 public class MenuScripts : MonoBehaviour
 {
-    public AudioMixer audioMixer;
+    [SerializeField] public AudioMixer audioMixer;
+    [SerializeField] public GameObject MainMenu;
+    [SerializeField] public GameObject WinnerMenu;
+
     public static bool IsTutorial = false;
+    public static bool isWinner = false;
+    public static MenuScripts menuScripts;
+
+    private void Start()
+    {
+        menuScripts = this;
+    }
     //Loads scene based on name given.
     public void PlayScene(string name)
     {
         SceneManager.LoadScene(name);
+        if (name == "Menu" && isWinner == true)
+        {
+            MainMenu.SetActive(false);
+            WinnerMenu.SetActive(true);
+        }
     }
     //loads scene with tutorial
     public void PlaySceneWithTutorial(string name)

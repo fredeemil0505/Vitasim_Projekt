@@ -31,7 +31,7 @@ public class SoundController : MonoBehaviour
         }
         else
         {
-            standInSource.clip = loseSound;
+            standInSource.clip = loseStandin;
             standInSource.Play();
         }
     }

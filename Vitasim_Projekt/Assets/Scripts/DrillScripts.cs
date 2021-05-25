@@ -7,6 +7,7 @@ using System.Threading;
 public class DrillScripts : MonoBehaviour
 {
     public static bool Running = false;
+    public static int Percentage;
     static int amount = 0;
     static bool firstdrill = true;
     [SerializeField]
@@ -30,7 +31,8 @@ public class DrillScripts : MonoBehaviour
             }
             //Sets the % amount to the UI overlay
             amount++;
-            percentagebar.text = (((100 / numberOfHoles)*amount).ToString())+"%";
+            Percentage = ((100 / numberOfHoles) * amount);
+              percentagebar.text = Percentage.ToString() +"%";
         }
         else
         {
