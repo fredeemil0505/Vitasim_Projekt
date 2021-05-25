@@ -25,12 +25,7 @@ public class HandleScripts : MonoBehaviour
         
         if (Handle.transform.rotation.z != xValue)
         {
-            if (FirstTrigger == true && TextScripts.guideStage <= 2 && MenuScripts.IsTutorial == true)
-            {
-                StartCoroutine(Textchanger(4));
-                TextScripts.guideStage = 5;
-                FirstTrigger = false;
-            }
+          
             difference = Handle.transform.rotation.z - xValue;
 
             drillHead.transform.localPosition = new Vector3(0, -0.001278f * Handle.transform.localEulerAngles.z, 0);
@@ -43,11 +38,6 @@ public class HandleScripts : MonoBehaviour
         }
 
     }
-    private IEnumerator Textchanger(float waittime)
-    {
-        TextScripts.ChangeText(new Color(0, 255, 0, 1), 0, 4, "", text);
-        yield return new WaitForSeconds(waittime);
-        TextScripts.ChangeText(new Color(255, 255, 255, 1), 1, 0, "Turn the handle to change the height of the drillhead", text);
-    }
+    
    
 }

@@ -10,7 +10,7 @@ public class MenuScripts : MonoBehaviour
     [SerializeField] public GameObject MainMenu;
     [SerializeField] public GameObject WinnerMenu;
 
-    public static bool IsTutorial = false;
+    public static bool IsTutorial = true;
     public static bool isWinner = false;
     public static MenuScripts menuScripts;
 
