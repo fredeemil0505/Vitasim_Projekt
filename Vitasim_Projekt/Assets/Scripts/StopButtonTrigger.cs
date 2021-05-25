@@ -18,4 +18,15 @@ public class StopButtonTrigger : MonoBehaviour
         }
 
     }
+    public void OnPress()
+    {
+       
+            DrillScripts.Running = false;
+            if (DrillScripts.Percentage == 100)
+            {
+                MenuScripts.isWinner = true;
+                MenuScripts.menuScripts.PlayScene("Menu");
+            }
+        
+    }
 }

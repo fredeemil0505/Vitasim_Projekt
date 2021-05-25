@@ -32,4 +32,24 @@ public class TextScripts : MonoBehaviour
         textobject.CrossFadeAlpha(alpha, waittime, false);
 
     }
+
+    //public static IEnumerator TextChanger(Color a, int alpha, float waittime, string message, Text textobject)
+    //{
+    //    SoundController sound = new SoundController();
+    //    if (a == new Color(0, 255, 0, 1))
+    //    {
+    //        sound.PlayAudioClip(true);
+    //    }
+    //    if (a == new Color(255, 0, 0, 1))
+    //    {
+    //        sound.PlayAudioClip(false);
+    //    }
+    //    textobject.color = a;
+    //    if (message == "")
+    //    { }
+    //    else
+    //    { textobject.text = message; }
+    //    textobject.CrossFadeAlpha(alpha, waittime, false);
+    //    yield return new WaitForSeconds(waittime);
+    //}
 }
