@@ -10,7 +10,7 @@ public class MenuScripts : MonoBehaviour
     [SerializeField] public GameObject MainMenu;
     [SerializeField] public GameObject WinnerMenu;
 
-    public static bool IsTutorial = true;
+    public static bool IsTutorial = false;
     public static bool isWinner = false;
     public static MenuScripts menuScripts;
 
@@ -21,6 +21,7 @@ public class MenuScripts : MonoBehaviour
     //Loads scene based on name given.
     public void PlayScene(string name)
     {
+        IsTutorial = false;
         SceneManager.LoadScene(name);
         if (name == "Menu" && isWinner == true)
         {
